@@ -363,7 +363,7 @@
                 </option>
                 <option>
                     <name>IProcessorMode2</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCOptLevel</name>
@@ -777,7 +777,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\ddr.icf</state>
+                    <state>Z:\lib-back\azure_rtos\apps\threadx\basic_threadx\firmware\src\config\sam_a5d2_xult_iar\ddr.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>

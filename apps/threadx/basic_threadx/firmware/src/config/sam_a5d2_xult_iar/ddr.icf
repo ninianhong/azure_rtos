@@ -1,7 +1,11 @@
 define memory mem with size = 4G;
+//define region RAM_region           = mem:[from 0x00200000 to 0x0021FFFF];
+//define region DDRAM_region         = mem:[from 0x21000000 to 0x3FFFFFFF];
+//define region DDRAM_NOCACHE_region = mem:[from 0x20000000 to 0x20FFFFFF];
 define region RAM_region           = mem:[from 0x00200000 to 0x0021FFFF];
-define region DDRAM_region         = mem:[from 0x21000000 to 0x3FFFFFFF];
-define region DDRAM_NOCACHE_region = mem:[from 0x20000000 to 0x20FFFFFF];
+define region RAM1_region           = mem:[from 0x00220000 to 0x0023FFFF];
+define region DDRAM_region         = mem:[from 0x20008000 to 0x23FFFFFF];
+define region DDRAM_NOCACHE_region = mem:[from 0x24000000 to 0x24FFFFFF];
 
 define block HEAP      with alignment = 4, size = 512{};
 define block CSTACK    with alignment = 8, size = 4096{};
@@ -35,7 +39,8 @@ initialize manually { section .ramdata_section };
 place at start of RAM_region { section .vectors };
 place in RAM_region { block SRAM };
 
-place at address 0x26F00000 { section .cstartup };
+//place at address 0x26F00000 { section .cstartup };
+place at start of DDRAM_region { section .cstartup };
 place in DDRAM_region { ro };
 place in DDRAM_region { rw };
 place in DDRAM_region { block CACHE_ALIGNED_CONST };

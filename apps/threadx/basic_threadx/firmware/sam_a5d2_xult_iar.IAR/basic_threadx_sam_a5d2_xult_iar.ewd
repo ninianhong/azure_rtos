@@ -32,11 +32,11 @@
                 </option>
                 <option>
                     <name>MacOverride</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>MacFile</name>
-                    <state></state>
+                    <state>C:\Users\freeb\Documents\fab02-firmware\verifyoneshot20220602\fab02-bad\lib\target\sama5d2\toolchain\iar\ddram_5d27.mac</state>
                 </option>
                 <option>
                     <name>MemOverride</name>
@@ -84,7 +84,7 @@
                 </option>
                 <option>
                     <name>OCDynDriverList</name>
-                    <state>ARMSIM_ID</state>
+                    <state>JLINK_ID</state>
                 </option>
                 <option>
                     <name>OCLastSavedByProductVersion</name>
@@ -92,7 +92,7 @@
                 </option>
                 <option>
                     <name>UseFlashLoader</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CLowLevel</name>
