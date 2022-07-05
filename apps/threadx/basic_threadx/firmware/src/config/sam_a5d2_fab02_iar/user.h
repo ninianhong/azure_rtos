@@ -57,8 +57,12 @@ extern "C" {
 // Section: User Configuration macros
 // *****************************************************************************
 // *****************************************************************************
+#if (defined XULT)  
 #define LED_TOGGLE() LED_GREEN_Toggle()
-
+#elif (defined FAB02)
+#define LED_GREEN_D5_Toggle() LED_GREEN_Toggle()
+#define LED_RED_D6_Toggle() LED_RED_Toggle()
+#endif
 //DOM-IGNORE-BEGIN
 #ifdef __cplusplus
 }

@@ -55,20 +55,30 @@
     See plib_pio.h for more details.
 */
 void PIO_Initialize ( void )
-{
-
+{ 
  /* Port B Pin 0 configuration */
 	PIOB_REGS->PIO_MSKR = 0x1U;
 	PIOB_REGS->PIO_CFGR = (PIOB_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x100U;
-	
+
+#if (defined XULT)	
  /* Port B Pin 5 configuration */
 	PIOB_REGS->PIO_MSKR = 0x20U;
 	PIOB_REGS->PIO_CFGR = (PIOB_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x100U;
-	
+#elif (defined FAB02)         
+ /* Port A Pin 29 (D5) configuration */
+	PIOA_REGS->PIO_MSKR = ( 1 << 29 );
+	PIOA_REGS->PIO_CFGR = (PIOA_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x100U;        
+#endif
+
+#if (defined XULT)	
  /* Port B Pin 6 configuration */
 	PIOB_REGS->PIO_MSKR = 0x40U;
 	PIOB_REGS->PIO_CFGR = (PIOB_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x100U;
-	
+#elif (defined FAB02)  
+ /* Port A Pin 30 (D6) configuration */
+	PIOA_REGS->PIO_MSKR = ( 1 << 30 );
+	PIOA_REGS->PIO_CFGR = (PIOA_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x100U;  
+#endif	
  /* Port B Pin 9 configuration */
 	PIOB_REGS->PIO_MSKR = 0x200U;
 	PIOB_REGS->PIO_CFGR = (PIOB_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x200U;

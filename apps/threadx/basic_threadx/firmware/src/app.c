@@ -134,7 +134,12 @@ void APP_Initialize ( void )
 
 void APP_Tasks ( void )
 {
+#if (defined XULT)  
     LED_TOGGLE();
+#elif (defined FAB02)    
+    LED_GREEN_D5_Toggle();
+    LED_RED_D6_Toggle();
+#endif
 }
 
 

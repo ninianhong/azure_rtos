@@ -78,7 +78,10 @@ void BSP_Initialize(void )
 		LED_GREEN_Off(); 
 		LED_RED_Off(); 
 		LED_BLUE_Off(); 
-
+                
+                LED_GREEN_On();
+		LED_RED_On(); 
+		LED_BLUE_On(); 
 
 }
 
