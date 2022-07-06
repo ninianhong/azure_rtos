@@ -3625,6 +3625,57 @@
                 </file>
             </group>
             <group>
+                <name>usbx_host_classes</name>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_activate.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_capabilities_get.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_command.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_configure.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_deactivate.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_endpoints_get.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_entry.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_ioctl.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_nnh.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_read.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_reception_callback.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_reception_start.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_reception_stop.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_transfer_request_completed.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_transmission_callback.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\src\ux_host_class_cdc_acm_write.c</name>
+                </file>
+            </group>
+            <group>
                 <name>usbx_host_controllers</name>
                 <file>
                     <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_controllers\src\ux_hcd_ehci_asynch_td_process.c</name>
