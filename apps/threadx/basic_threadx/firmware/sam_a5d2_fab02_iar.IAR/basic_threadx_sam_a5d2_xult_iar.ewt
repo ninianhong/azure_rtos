@@ -4657,8 +4657,20 @@
                 </group>
             </group>
         </group>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\samples\demo_usbx.c</name>
-        </file>
+        <group>
+            <name>task</name>
+            <file>
+                <name>$PROJ_DIR$\..\src\app.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\samples\demo_usbx.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\task_led.c</name>
+            </file>
+        </group>
     </group>
+    <file>
+        <name>$PROJ_DIR$\..\src\main.c</name>
+    </file>
 </project>

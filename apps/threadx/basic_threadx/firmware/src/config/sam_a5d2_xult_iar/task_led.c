@@ -92,7 +92,7 @@ static void _APP_Tasks( ULONG thread_input )
 
 
 
-void tx_application_define(void* first_unused_memory)
+void led_tx_application_define(void* first_unused_memory)
 {
     /* Create a byte memory pool from which to allocate the thread stacks. */
     tx_byte_pool_create(&byte_pool_0, "byte pool 0", first_unused_memory, TX_BYTE_POOL_SIZE);
@@ -151,25 +151,7 @@ void tx_application_define(void* first_unused_memory)
 
 }
 
-// *****************************************************************************
-// *****************************************************************************
-// Section: System "Tasks" Routine
-// *****************************************************************************
-// *****************************************************************************
 
-/*******************************************************************************
-  Function:
-    void SYS_Tasks ( void )
-
-  Remarks:
-    See prototype in system/common/sys_module.h.
-*/
-void SYS_Tasks ( void )
-{
-        /*Enter the ThreadX kernel.*/
-    tx_kernel_enter();
-
-}
 
 /*******************************************************************************
  End of File

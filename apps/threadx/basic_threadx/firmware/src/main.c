@@ -52,6 +52,39 @@
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "definitions.h"                // SYS function prototypes
 
+// *****************************************************************************
+// *****************************************************************************
+// Section: System "tx_application_define" Routine
+// *****************************************************************************
+// *****************************************************************************
+extern   void led_tx_application_define( void* first_unused_memory );
+extern   void usb_demo_tx_application_define( void* first_unused_memory );
+void tx_application_define(void* first_unused_memory)
+{
+  led_tx_application_define(first_unused_memory);
+  usb_demo_tx_application_define(first_unused_memory);
+}
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: System "Tasks" Routine
+// *****************************************************************************
+// *****************************************************************************
+
+/*******************************************************************************
+  Function:
+    void SYS_Tasks ( void )
+
+  Remarks:
+    See prototype in system/common/sys_module.h.
+*/
+void SYS_Tasks ( void )
+{
+        /*Enter the ThreadX kernel.*/
+    tx_kernel_enter();
+
+}
+
 
 // *****************************************************************************
 // *****************************************************************************
