@@ -221,6 +221,7 @@
                 <option>
                     <name>CCDefines</name>
                     <state>FAB02</state>
+                    <state>CONFIG_BOARD_SAMA5D2_FAB02</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -337,7 +338,7 @@
                 </option>
                 <option>
                     <name>PreInclude</name>
-                    <state></state>
+                    <state>Z:\lib-back\atmel-software-package\target\preinc.h</state>
                 </option>
                 <option>
                     <name>CompilerMisraOverride</name>
@@ -359,6 +360,15 @@
                     <state>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_device_classes\inc</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_controllers\inc</state>
                     <state>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\common\usbx_host_classes\inc</state>
+                    <state>Z:\lib-back\atmel-software-package\target\common</state>
+                    <state>Z:\lib-back\atmel-software-package\target\sama5d2</state>
+                    <state>Z:\lib-back\atmel-software-package\target\sama5d2\component</state>
+                    <state>Z:\lib-back\atmel-software-package\target\sama5d2\pio</state>
+                    <state>Z:\lib-back\atmel-software-package\target\sama5d2\toolchain\iar</state>
+                    <state>Z:\lib-back\atmel-software-package\utils</state>
+                    <state>Z:\lib-back\atmel-software-package\drivers</state>
+                    <state>Z:\lib-back\atmel-software-package\drivers\peripherals</state>
+                    <state>Z:\lib-back\atmel-software-package\arch</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -2134,6 +2144,57 @@
     </configuration>
     <group>
         <name>Harmony3</name>
+        <group>
+            <name>atmel-target</name>
+            <group>
+                <name>common</name>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_audio.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_console.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_led.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_spi.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_timer.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_twi.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\chip_common.c</name>
+                </file>
+            </group>
+            <group>
+                <name>sama5d2</name>
+                <group>
+                    <name>component</name>
+                </group>
+                <group>
+                    <name>pio</name>
+                </group>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\sama5d2\board_fab02.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\sama5d2\board_support.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\sama5d2\chip.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\sama5d2\chip_pins.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\sama5d2\sama5d2.h</name>
+                </file>
+            </group>
+        </group>
         <group>
             <name>Header Files</name>
             <group>

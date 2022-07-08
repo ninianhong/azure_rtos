@@ -2372,6 +2372,57 @@
     <group>
         <name>Harmony3</name>
         <group>
+            <name>atmel-target</name>
+            <group>
+                <name>common</name>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_audio.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_console.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_led.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_spi.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_timer.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\board_twi.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\common\chip_common.c</name>
+                </file>
+            </group>
+            <group>
+                <name>sama5d2</name>
+                <group>
+                    <name>component</name>
+                </group>
+                <group>
+                    <name>pio</name>
+                </group>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\sama5d2\board_fab02.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\sama5d2\board_support.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\sama5d2\chip.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\sama5d2\chip_pins.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\..\..\..\..\..\atmel-software-package\target\sama5d2\sama5d2.h</name>
+                </file>
+            </group>
+        </group>
+        <group>
             <name>Header Files</name>
             <group>
                 <name>config</name>
