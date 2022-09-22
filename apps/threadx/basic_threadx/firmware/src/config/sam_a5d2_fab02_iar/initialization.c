@@ -117,6 +117,8 @@ void SYS_Initialize ( void* data )
 
     MMU_Initialize();
     Matrix_Initialize();
+    
+    irq_initialize();
 
     AIC_INT_Initialize();
 

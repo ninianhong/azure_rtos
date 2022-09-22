@@ -4942,6 +4942,9 @@
                 <name>$PROJ_DIR$\..\..\..\..\..\..\threadx-usbx\samples\demo_usbx.c</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\..\src\main_usb_common.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\..\src\config\sam_a5d2_xult_iar\task_led.c</name>
             </file>
         </group>

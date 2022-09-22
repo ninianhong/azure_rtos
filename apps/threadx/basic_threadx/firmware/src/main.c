@@ -51,10 +51,13 @@
 #include <stdbool.h>                    // Defines true
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "definitions.h"                // SYS function prototypes
+   
+
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: System "tx_application_define" Routine
+
 // *****************************************************************************
 // *****************************************************************************
 extern   void led_tx_application_define( void* first_unused_memory );
